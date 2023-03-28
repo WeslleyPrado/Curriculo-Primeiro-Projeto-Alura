@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor--primaria: #2C3639;
+    --cor--secundaria: #DCD7C9;
+    --cor--terciaria: #A27B5C;
+    --cor--hover: #3F4E4F;
+
+    --fonte--primaria: 'Krona One', sans-serif;
+    --fonte--secundaria: 'Montserrat', sans-serif;
+}
+
+*{ /*Aqui pegamos todo o conteúdo do HTML/CSS e resetamos a margem e o padding do doc para garantir que o estilo seja usado no navegador */
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* height: 100vh; Aqui queremos que o conteúdo do body preencha 100% da VP, sem barra de rolagem. APENAS O HEIGHT (ALTURA) */
+    box-sizing: border-box; /*Aqui setamos que o conteúdo vai ficar limitado ao quadro. A imagem ou elemento não vai ultrapassar o tamanho da tela*/
+    background-color: var(--cor--primaria);
+    color: var(--cor--secundaria);
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 5%; /*Interessante não precisar do Space Between, já que é apenas um espaçamento simples */
+    
+}
+.cabecalho__menu__link{
+    font-family: var(--fonte--secundaria);
+    font-weight: 600;
+    color: var(--cor--terciaria);
+    font-size: 24px;
+    text-decoration: none;
+}
+.cabecalho__menu__link:hover{
+    color:var(--cor--secundaria); background-color: var(--cor--hover); border-radius: 50px; width:fit-content;
+}
+.titulo-destaque {
+    color: var(--cor--terciaria);
+    
+} 
+.apresentacao {
+    display: flex;
+    align-items: center;/* Não alinha com a pagina mas sim com o conteúdo proprio e o tamanho tbm, tipo imagens*/
+    justify-content: space-between; /* Afasta entre si  os elementos jogando tudo pras extremidade, porém sem margem nem nada*/
+    padding: 8% 15%;
+        /* margin: 10% 18%;Aqui usa uma margem pra todos os elementos igualmente, cuidado pq TUDO ganha margem */
+}
+.apresentacao__conteudo {
+    width: 630px; /*Largura da "caixa de texto". É a largura total que esse conteudo setado vai preencher na tela, se diminuir vai estreitando tudo */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: var(--fonte--primaria);
+}
+.apresentacao__conteudo__paragrafo{
+    font-size: 24px;
+    font-family: var(--fonte--secundaria);
+    text-decoration: none;
+    text-align: justify;
+}
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*tem que ser align itens e não content*/
+    gap: 30px;
+    /*justify-content: space-between; Aqui ele separava no row, porém no column é irrelevante*/
+
+}
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte--primaria);
+    font-weight: 400; /*aqui não tem px */
+    font-size: 24px;
+}
+.apresentacao__links__link{
+    color: var(--cor--secundaria);
+    border: 2px solid var(--cor--terciaria);             /*aqui tirei o fundo e só deixei a borda pintada com a expessura (px) desejada*/
+    border-radius: 8px;                       /* O arredondamento da quina */
+    width: 378px;                             /* Largura do botão */
+    padding: 21.5px 0px;                        /*espaçamento do texto até as extremidades (x,y) do botão */
+    text-align:center;                        /*A posição do texto dentro do limite do "botão"*/
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--fonte--secundaria);
+    text-decoration: none;                    /*sem sublinhado*/
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    
+    /*height: 79px; Não usamos aqui porque o padding da conta e faz um alinhamento mais uniforme, CADA TELA TEM UMA MEDIDA*/
+}
+.apresentacao__links__link:hover {
+    background-color: var(--cor--hover);
+}
+.foto__perfil{
+    border-radius: 10%;
+}
+.rodape{
+    background-color: var(--cor--terciaria); 
+    color: var(--cor--primaria);
+    padding: 25px;
+    text-align: center;
+    font-family: var(--fonte--secundaria);
+    font-size: 24px;
+    font-weight: 400;
+}
+/*------------------------------------------------------------------------------*/
+.apresentacao__sobre{
+    display: flex;
+    justify-content: space-between;
+    padding: 8% 15%;
+    
+}
+.links__alura{
+    color:var(--cor--terciaria);
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--fonte--secundaria);
+    text-decoration: none;
+    
+}

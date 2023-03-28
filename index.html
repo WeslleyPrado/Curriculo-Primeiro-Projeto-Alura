@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio WSP</title>
+    <link rel="stylesheet" href="./Estilos/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre Mim</a>
+            <a class="cabecalho__menu__link" href="curriculo.html">Currículo</a>
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo"> <!-- Aqui eu criei uma sessão para ter apenas 2 elem. filhos (section e img) assim o flebox mantém tudo alinhado porém separa em "2 colunas"-->
+            <!--Agora que setei os espaçamentos no flexbox pelo CSS, preciso estilizar ele, então crio um atributo para minha sessão e como ela é um elem. filho da MAIN que também tem um at filho, fica com essa nomenclatura-->
+            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível 
+            <strong class="titulo-destaque"> com um Front-end de qualidade!
+            </strong></h1>
+            <p class="apresentacao__conteudo__paragrafo">Olá! Sou Weslley Prado, estudante de programação com foco em Front-end. <!--Sigo criando atributos para estilizar-->
+            Recentemente descobri a paixão pela
+            tecnologia e desde então passo a maior parte de meu tempo livre lendo artigos e estudando
+            técnicas para o melhor desenvolvimento Web. Vamos conversar?</p>
+
+            <div class="apresentacao__links"><!--Aqui eu quero "DIVidir" separar a minha estrutura só pra organização mesmo, isso deixará mais facil a organização-->
+                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes!</h2>
+
+                <a class="apresentacao__links__link" href="https://github.com/WeslleyPrado" target="_blank">
+                    <img src="./assets/github.png">
+                    GitHub
+                </a> <!--não usamos o buttom pq é mais relacionado à formulários e etc, nesse caso de botão usamos uma tag ancora (a)--> 
+
+                <a class="apresentacao__links__link" href="https://www.linkedin.com/in/weslley-prado/" target="_blank">
+                    <img src="./assets/linkedin.png">
+                    LinkedIn
+                </a>  
+
+            </div>
+        </section>
+        <img class="foto__perfil" src="./assets/Imagem.jpeg" alt="Foto" width="600px">
+    </main>
+    <footer>
+        <p class="rodape">Desenvolvido por WSP</p>
+    </footer>   
+</body>
+</html> 
